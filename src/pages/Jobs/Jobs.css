@@ -1,0 +1,198 @@
+.subheader {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+}
+
+.flex-row {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    min-height: 96px;
+    justify-content: start;
+}
+
+.stick {
+    /*position: absolute;*/
+    /*right: auto;*/
+    /*left: 0%;*/
+    z-index: 3;
+    width: 4px;
+    min-width: 0;
+    min-height: 96px;
+    background-color: #2c2c2c;
+}
+
+.subtitle {
+    /*position: absolute;*/
+    /*inset: 20px auto 20px 1.83%;*/
+    z-index: 2;
+    min-width: 0;
+    font: 400 48px/1.16 "Roboto Condensed", Helvetica, Arial, serif;
+    color: #2c2c2c;
+}
+
+.search-field {
+    /*position: absolute;*/
+    /*inset: 22px 0;*/
+    z-index: 1;
+    margin: 0;
+    padding: 0 24px;
+    width: 386px;
+    height: 48px;
+    min-width: 0;
+    border: #2c2c2c 1px solid;
+    border-radius: 9999px;
+}
+
+.search-btn {
+    /*position: absolute;*/
+    inset: 22px 0;
+    left: 320px;
+    z-index: 1;
+    margin: 0;
+    width: 48px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+    transform: scale(1.1); /* Легкое увеличение */
+}
+
+.cart-button {
+    position: absolute;
+    inset: 22px 0 22px auto;
+    width: 52px;
+    min-width: 0;
+}
+
+.list-button {
+    position: absolute;
+    inset: 22px 72px 22px auto;
+    width: 52px;
+    min-width: 0;
+    background: #2c2c2c;
+    border-radius: 100%;
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(50%);
+}
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    background-color: #fae6f9;
+}
+
+.flex_row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    margin: 40px auto 50px;
+    width: 80%;
+}
+
+.card-row {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 1560px;
+}
+
+@media (max-width: 1600px) {
+    .card-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1100px) {
+    .card-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .card-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+/* Основной стиль кнопки корзины */
+.btn-favorites {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: all 0.3s ease-in-out !important;
+    cursor: pointer;
+}
+
+.btn-favorites:hover {
+    transform: scale(1.1); /* Легкое увеличение */
+}
+
+.btn-favorites:disabled {
+    background-color: #cccccc; /* Серый цвет для отключенной кнопки */
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Иконка внутри кнопки */
+.btn-favorites img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+
+/* Счетчик количества товаров */
+.badge {
+    font-size: 0.8rem;
+    color: #fff; /* Белый текст */
+    background-color: #ff5722; /* Красный цвет значка */
+    padding: 5px 8px;
+    border-radius: 12px;
+    position: absolute;
+    top: -5px; /* Сдвиг вверх */
+    right: -5px; /* Сдвиг вправо */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    animation: pop 0.3s ease-in-out;
+}
+
+/* Анимация появления значка */
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
