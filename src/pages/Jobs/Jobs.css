@@ -1,0 +1,104 @@
+.subheader {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+}
+
+.flex-row {
+    position: relative;
+    margin: 16px auto 36px;
+    width: 80%;
+    min-height: 96px;
+}
+
+.stick {
+    position: absolute;
+    right: auto;
+    left: 0%;
+    z-index: 3;
+    width: 4px;
+    min-width: 0;
+    min-height: 96px;
+    background-color: #2c2c2c;
+}
+
+.subtitle {
+    position: absolute;
+    inset: 20px auto 20px 1.83%;
+    z-index: 2;
+    min-width: 0;
+    font: 400 48px/1.16 "Roboto Condensed", Helvetica, Arial, serif;
+    color: #2c2c2c;
+}
+
+.search-field {
+    position: absolute;
+    inset: 22px 0;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 386px;
+    min-width: 0;
+    border: #2c2c2c 1px solid;
+    border-radius: 9999px;
+}
+
+.search-btn {
+    position: absolute;
+    inset: 22px 0;
+    left: 320px;
+    z-index: 1;
+    margin: 0 auto;
+    width: 48px;
+    cursor: pointer;
+}
+
+.cart-button {
+    position: absolute;
+    inset: 22px 0 22px auto;
+    width: 52px;
+    min-width: 0;
+}
+
+.list-button {
+    position: absolute;
+    inset: 22px 72px 22px auto;
+    width: 52px;
+    min-width: 0;
+    background: #2c2c2c;
+    border-radius: 100%;
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(50%);
+}
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    background-color: #fae6f9;
+}
+
+.flex_row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    margin: 40px auto 50px;
+    width: 80%;
+}
