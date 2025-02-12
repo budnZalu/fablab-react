@@ -1,0 +1,15 @@
+{
+  "name": "FabLab Moscow",
+  "short_name": "FabLab",
+  "start_url": "/fablab-react/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f29191",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "type": "image/png", "sizes": "512x512"
+    }
+  ]
+}
